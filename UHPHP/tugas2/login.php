@@ -63,7 +63,7 @@ form{
 }
 form *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
+    color: rgb(0,0,0);
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -96,11 +96,12 @@ input{
     color: #e5e5e5;
 }
 button{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100%;
     background-color: #ffffff;
     color: #080710;
-    padding: 30px 0;
+    padding: 20px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -131,11 +132,12 @@ button{
     </style>
 </head>
 <body>
-    <div class="row" style="margin-top:50px;">
-    <div class="col-md"></div>
-    <div class="col-md rounded bg-light" style="box-shadow: 4px 4px 5px -4px;padding:10px">
+    <!-- <div class="row" style="margin-top:50px;">
+    <div class="col-md"></div> -->
+    <!-- <div class="col-md rounded bg-light" style="box-shadow: 4px 4px 5px -4px;padding:10px"> -->
     <div class="background">
-        <!-- <div class="ima"></div> -->
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
       <form action="proses_login.php" method="post">
           <h3 align="center">LOGIN</h3>
@@ -144,7 +146,7 @@ button{
           <label for="password">Password:</label>
           <input type="password" name="password" class="form-control"><br>
 
-          <center><button type="submit" name="simpan" class="btn btn-success" value="LOGIN"></center>
+          <center><button type="submit" name="simpan" class="btn btn-success" value="LOGIN">LOGIN</center>
           <p margin="5px 0" align ="center" class="login-register-text">Anda belum punya akun? <a href="tambah_user.php">Buat Akun</a></p>
       </form>
     </div>
@@ -153,4 +155,3 @@ button{
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
-
